@@ -22,6 +22,10 @@ composer install
 ```
 ./vendor/bin/sail php artisan migrate --seed
 ```
+
+Для тестирование желательно закомментировать
+cache middleware в ресурсных контроллерах (Article,Comment,Role).
+Кэш - 10 сек.
 ## Доступные параметры для index и Store
 
 ### Articles
